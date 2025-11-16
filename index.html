@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="number">enter number:</label>
+    <input type="number" id="number" name="number">
+    <button type="button" onclick="boom(document.getElementById('number').value)"> boom your number</button>
+
+<br>
+<button type="button" onclick="boom2()"> just boom!</button>
+<br>
+
+    <label for="number3">divide by 7</label>
+    <input type="number" id="number3" name="number3">
+    <button type="button" onclick="divide7(document.getElementById('number3').value)">divide by 7</button>
+    <h2 id="divide7-result"></h2>
+
+<br> 
+    <input type="number" id="range_min" name="min" placeholder="min">
+    <input type="number" id="range_max" name="max" placeholder="max">
+    <button type="button" onclick="range()">getrange</button>
+    <p id="range_result"></p>
+
+
+<div id="boomview" style="visibility:hidden">
+     <img src="boom.gif" alt="boom">
+</div>
+<div id="boomview2" style="visibility:hidden">
+     <img src="boom2.gif" alt="boom" height="200">
+</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
